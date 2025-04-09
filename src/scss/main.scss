@@ -1,0 +1,17 @@
+// базовые подключения
+@import "./vendor/normalize";
+@import "vars";
+@import "settings";
+@import "./components/fonts";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/nav";
+@import "./components/burger";
+@import "./components/top-info";
+@import "./components/about";
+@import "./components/possibilities";
+@import "./components/partner";
+@import "./components/achievements";
+@import "./components/services";
+@import "./components/work-with-us";

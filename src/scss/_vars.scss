@@ -1,0 +1,31 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --white-transparent: rgba(255, 255, 255, 0.8);
+    --bg-white: #fafafa;
+    --lightest: #f5f5f5;
+    --light-grey: #ededed;
+    --lightest-grey: #faf7f6;
+    --grey: #535353;
+    --grey-2: #282828;
+    --grey-3: #737373;
+    --grey-4: #787878;
+    --dark-grey: #555;
+    --darknes: #22222a;
+
+    --orange: #f85c35;
+    --orange-text: #f46111;
+    --green: #186641;
+    --brown: #846259;
+
+    --border: #e6e6e6;
+
+    --font-family: "Manrope", sans-serif;
+    --second-family: "Gilroy", sans-serif;
+    --third-family: "Onest", sans-serif;
+    --font3: "Inter", sans-serif;
+    --font4: "Rubik", sans-serif;
+}

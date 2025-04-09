@@ -1,0 +1,42 @@
+.possibilities {
+    margin-bottom: 135px;
+
+    &__title {
+        padding: 0px 260px;
+        margin-bottom: 50px;
+    }
+
+    &__blocks {
+        display: flex;
+        gap: 11px;
+    }
+
+    &__block {
+        border-radius: 15px;
+        background: var(--lightest);
+    }
+
+    &__text-wrap {
+        padding: 52px 54px 60px 54px;
+    }
+
+    &__block-title {
+        font-weight: 600;
+        font-size: 1.563rem;
+        color: var(--orange);
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        font-size: 1.125rem;
+        padding: 0 160px 0 0;
+    }
+
+    &__img-wrap {
+        min-height: 274px;
+    }
+
+    &__img {
+        justify-self: center;
+    }
+}

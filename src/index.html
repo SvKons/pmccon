@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @include('partials/head.html')
+
+    <body>
+        <div class="top-wrapper">
+            @include('partials/header.html') @include('partials/top-info.html')
+        </div>
+
+        <main class="main">
+            @include('partials/about.html')
+            @include('partials/possibilities.html')
+            @include('partials/partner.html')
+            @include('partials/achievements.html')
+            @include('partials/services.html')
+            <div class="container">Слайдер в разработке</div>
+            @include('partials/work-with-us.html')
+
+            <button class="scroll-to-top" aria-label="Scroll to top">↑</button>
+        </main>
+        @include('partials/footer.html')
+    </body>
+</html>
