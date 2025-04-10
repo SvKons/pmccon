@@ -1,0 +1,111 @@
+.callback {
+    margin-bottom: 100px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        background-color: var(--lightest);
+        border-radius: 15px;
+        padding-top: 120px;
+        padding-bottom: 110px;
+    }
+
+    &__block-left {
+        max-width: 528px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__block-person {
+        max-width: 408px;
+        width: 100%;
+    }
+
+    &__top-text {
+        display: inline-block;
+        width: 100%;
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: rgba(255, 255, 255, 0.75);
+        background-color: var(--green);
+        border-radius: 4px;
+        padding: 4px 18px 4px;
+    }
+
+    &__block-bottom {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        background-color: var(--white);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    &__img-wrap {
+        max-width: 103px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__personal-info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 111%;
+    }
+
+    &__position {
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: var(--grey-5);
+    }
+
+    &__block-right {
+        flex: 1;
+    }
+
+    &__form-text {
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: var(--black);
+        max-width: 375px;
+        margin-bottom: 21px;
+    }
+
+    &__inputs-blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        background-color: var(--green);
+        padding: 44px 32px;
+        border-radius: 15px;
+    }
+
+    &__inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    &__bottom-block {
+        display: flex;
+        align-items: center;
+        gap: 45px;
+    }
+
+    &__privacy {
+        font-size: 0.75rem;
+        line-height: 133%;
+        color: var(--white);
+        max-width: 216px;
+    }
+}

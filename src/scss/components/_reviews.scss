@@ -1,0 +1,20 @@
+.reviews {
+    margin-bottom: 140px;
+
+    &__title {
+        margin-bottom: 46px;
+        padding-right: 960px;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        gap: 27px;
+    }
+
+    &__block {
+        width: 335px;
+        height: 446px;
+        background: var(--grey-3);
+    }
+}

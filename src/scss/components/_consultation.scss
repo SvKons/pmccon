@@ -1,0 +1,121 @@
+.consultation {
+    margin-bottom: 140px;
+
+    &__wrapper {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        background-color: var(--green);
+        border-radius: 15px;
+        padding: 63px 92px 76px;
+    }
+
+    &__block-left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 38px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -90px;
+            left: -129px;
+            background-image: url(../img/consultation-2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 206px;
+            height: 118px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -71px;
+            right: -450px;
+            background-image: url(../img/consultation-1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 480px;
+            height: 315px;
+            z-index: 1;
+        }
+    }
+
+    &__title {
+        font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 2.875rem;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: var(--white);
+
+        &_weight {
+            font-weight: 900;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 1.125rem;
+        color: var(--white);
+        max-width: 260px;
+    }
+
+    &__block-right {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.05);
+        padding: 76px 70px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            background-image: url(../img/consultation-3.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 126px;
+            height: 93px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -110px;
+            right: -340px;
+            background-image: url(../img/consultation-4.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 480px;
+            height: 315px;
+        }
+    }
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__bottom-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 45px;
+    }
+
+    &__privacy {
+        font-size: 0.75rem;
+        line-height: 133%;
+        color: var(--white);
+        max-width: 216px;
+    }
+}

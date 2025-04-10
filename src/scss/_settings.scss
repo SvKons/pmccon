@@ -159,6 +159,28 @@ a {
     }
 }
 
+.privacy-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 133%;
+    color: var(--white);
+    text-decoration: underline;
+
+    &_colored {
+        color: var(--black);
+    }
+}
+
+.input {
+    font-size: 0.875rem;
+    color: var(--grey-3);
+    border-radius: 70px;
+    border: none;
+    outline: none;
+    padding: 25px 47px;
+}
+
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
