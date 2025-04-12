@@ -10,16 +10,25 @@
         <main class="main">
             @include('partials/about.html')
             @include('partials/possibilities.html')
-            @include('partials/partner.html')
-            @include('partials/achievements.html')
-            @include('partials/services.html')
-            <div class="container">Слайдер в разработке</div>
+            <div class="main__section-bg">
+                @include('partials/partner.html')
+                @include('partials/achievements.html')
+                @include('partials/services.html')
+            </div>
+
+            @include('partials/projects.html')
             @include('partials/work-with-us.html')
             @include('partials/consultation.html')
             @include('partials/support.html') @include('partials/reviews.html')
             @include('partials/callback-form.html')
 
-            <button class="scroll-to-top" aria-label="Scroll to top">↑</button>
+            <button class="scroll-to-top" aria-label="Scroll to top">
+                <img
+                    src="./img/icons/icon-arrow-scroll.png"
+                    class="scroll-to-top__img"
+                    alt="Иконка стрелочка для скролла вверх"
+                />
+            </button>
         </main>
         @include('partials/footer.html')
     </body>

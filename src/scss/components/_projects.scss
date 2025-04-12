@@ -1,0 +1,133 @@
+.projects {
+    margin-bottom: 140px;
+
+    &__wrapper {
+        display: flex;
+        gap: 58px;
+    }
+
+    &__title {
+        padding-right: 900px;
+        margin-bottom: 77px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 58px;
+        border-bottom: 1px solid var(--grey-11);
+        padding-bottom: 60px;
+        margin-bottom: 30px;
+    }
+
+    &__img-wrap {
+        max-width: 460px;
+        min-width: 455px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__info-block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url(../img/icons/icon-project-1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 126px;
+            height: 67px;
+        }
+    }
+
+    &__block-title {
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        gap: 400px;
+        margin-right: 130px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__block-text {
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: var(--grey-8);
+        border-radius: 7px;
+        background: var(--grey-6);
+        align-self: flex-start;
+        padding: 8px 16px;
+    }
+
+    &__block-descroiption {
+        font-size: 1.125rem;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    &__pagination-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__button {
+        align-self: flex-start;
+    }
+
+    &__page-count {
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: var(--grey-9);
+
+        &_active {
+            color: var(--orange);
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 6px;
+    }
+
+    &__button-step {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        &_arrow {
+            max-width: 46px;
+            height: 46px;
+            padding: 0;
+        }
+
+        &_colored {
+            font-weight: 600;
+            color: var(--orange);
+            border: 1px solid var(--orange);
+            border-radius: 70px;
+            padding: 14px 28px;
+        }
+    }
+}

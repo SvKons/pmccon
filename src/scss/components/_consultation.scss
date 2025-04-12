@@ -40,7 +40,7 @@
             background-size: contain;
             width: 480px;
             height: 315px;
-            z-index: 1;
+            z-index: 100;
         }
     }
 
@@ -64,20 +64,19 @@
         max-width: 260px;
     }
 
-    &__block-right {
+    &__block-right-wrapper {
         position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        border-radius: 15px;
-        backdrop-filter: blur(10px);
-        background: rgba(255, 255, 255, 0.05);
-        padding: 76px 70px;
+    }
+
+    &__block-right-decor {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
 
         &::before {
             content: "";
             position: absolute;
-            top: -30px;
+            top: -18px;
             left: -30px;
             background-image: url(../img/consultation-3.png);
             background-repeat: no-repeat;
@@ -97,6 +96,18 @@
             width: 480px;
             height: 315px;
         }
+    }
+
+    &__block-right {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.05);
+        padding: 76px 70px;
+        z-index: 1; // выше, чем decor
     }
 
     &__inputs {

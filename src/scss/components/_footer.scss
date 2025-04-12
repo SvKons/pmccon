@@ -1,5 +1,18 @@
 .footer {
+    position: relative;
     background-color: var(--grey-6);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../img/bg-vector.png) no-repeat top right;
+        background-size: contain;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
 
     &__wrapper {
         display: flex;
@@ -62,7 +75,7 @@
     }
 
     &__block-bottom {
-        border-top: 1px solid #ccc;
+        border-top: 1px solid var(--grey-10);
         padding-top: 68px;
     }
 }
