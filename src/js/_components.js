@@ -10,8 +10,4 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.querySelector(".scroll-to-top")) {
         scrollArrow();
     }
-
-    if (document.querySelector(".work-slider")) {
-        workSlider();
-    }
 });
