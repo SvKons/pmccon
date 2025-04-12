@@ -22,11 +22,23 @@
 
     &__img-wrap {
         max-width: 460px;
-        min-width: 455px;
+        width: 100%;
     }
 
     &__img {
         width: 100%;
+    }
+
+    &__slide:nth-child(1) .projects__info-block::after {
+        background-image: url("../img/icons/icon-project-1.png");
+    }
+
+    &__slide:nth-child(2) .projects__info-block::after {
+        background-image: url("../img/icons/icon-project-2.png");
+    }
+
+    &__slide:nth-child(3) .projects__info-block::after {
+        background-image: url("../img/icons/icon-project-3.png");
     }
 
     &__info-block {
@@ -41,7 +53,6 @@
             position: absolute;
             top: 0;
             right: 0;
-            background-image: url(../img/icons/icon-project-1.png);
             background-repeat: no-repeat;
             background-size: contain;
             width: 126px;
@@ -107,27 +118,71 @@
 
     &__buttons {
         display: flex;
-        gap: 6px;
+        gap: 10px;
     }
 
     &__button-step {
         background-color: transparent;
-        border: none;
+        border: none; // Убираем границу по умолчанию
         outline: none;
         cursor: pointer;
 
         &_arrow {
-            max-width: 46px;
-            height: 46px;
+            max-width: 48px;
+            height: 48px;
             padding: 0;
         }
 
         &_colored {
             font-weight: 600;
             color: var(--orange);
-            border: 1px solid var(--orange);
+            border: 1px solid var(--orange); // Граница только для кнопки с текстом
             border-radius: 70px;
             padding: 14px 28px;
+
+            .projects__button-step-icon path {
+                fill: currentColor;
+            }
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+            color: var(--grey-12);
+
+            // Только для кнопки с текстом
+            &.projects__button-step_colored {
+                border: 1px solid var(--grey-12);
+            }
+
+            .projects__icon-rect {
+                stroke: var(--grey-12);
+            }
+
+            .projects__icon-path {
+                fill: var(--grey-12);
+            }
+
+            .projects__button-step-icon path {
+                fill: var(--grey-12);
+            }
+        }
+
+        &:not(:disabled) {
+            .projects__icon-rect {
+                stroke: var(--orange);
+            }
+
+            .projects__icon-path {
+                fill: var(--orange);
+            }
+        }
+    }
+
+    &__slide {
+        // display: none;
+
+        &:first-child {
+            display: block;
         }
     }
 }
