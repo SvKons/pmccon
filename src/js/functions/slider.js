@@ -1,3 +1,5 @@
+"use strict";
+
 import Hammer from "hammerjs";
 
 export const slider = () => {

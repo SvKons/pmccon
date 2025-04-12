@@ -1,0 +1,27 @@
+.privacy-policy {
+    &__wrapper {
+        padding: 26px 360px;
+    }
+
+    &__button {
+        justify-self: flex-start;
+        margin-bottom: 38px;
+    }
+
+    &__icon {
+        transform: rotate(180deg);
+    }
+
+    &__block {
+        border-radius: 15px;
+        background: var(--lightest);
+        padding: 53px 93px;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 0 200px;
+    }
+}

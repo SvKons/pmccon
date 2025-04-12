@@ -1,12 +1,23 @@
 .header {
+    &__wrapper {
+    }
+}
+
+.header {
     position: relative;
     background-color: var(--lightest);
-    z-index: 10000;
+    z-index: 10;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transform: translateY(0);
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         gap: 20px;
+    }
+
+    &__logo-wrap {
+        max-width: 100px;
     }
 
     &__logo-container {
@@ -21,28 +32,6 @@
         font-size: 0.938rem;
         color: var(--grey);
         max-width: 208px;
-    }
-}
-
-.header {
-    position: relative;
-    z-index: 10000;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    transform: translateY(0);
-
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-
-    &__nav-wrapper {
-        width: 100%;
-    }
-
-    &__logo-wrap {
-        max-width: 100px;
     }
 
     &__logo {

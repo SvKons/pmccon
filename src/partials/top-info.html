@@ -20,10 +20,13 @@
             </p>
         </div>
         <div class="top-info__bottom-block">
-            <button class="top-info__button button">
+            <button
+                class="top-info__button button"
+                data-popup-target="consultationPopup"
+            >
                 <img
                     src="./img/icons/icon-arrow-white.png"
-                    class="nav__icon"
+                    class="button__icon"
                     alt="Иконка стрелочки"
                 />
                 <span class="button__text">Бесплатная консультация</span>
@@ -35,4 +38,5 @@
             </p>
         </div>
     </div>
+    @include('popup.html')
 </section>
