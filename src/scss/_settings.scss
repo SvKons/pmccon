@@ -1,5 +1,6 @@
 /* stylelint-disable order/order */
 html {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     margin: 0;
 }
@@ -65,7 +66,7 @@ a {
 
 .container {
     max-width: 1920px;
-    padding: 0 22px;
+    padding: 0 70px;
     margin: 0 auto;
 
     @media (max-width: 425px) {

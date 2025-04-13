@@ -22,7 +22,8 @@
                 position: absolute;
                 top: 65%;
                 right: -37px;
-                background: url(../img/line.svg) 0 0 / contain no-repeat;
+                background: url(../img/icons/icon-line.png) 0 0 / contain
+                    no-repeat;
                 width: 38px;
                 height: 10px;
                 z-index: 9999;
@@ -41,7 +42,8 @@
                 position: absolute;
                 top: 44%;
                 right: -37px;
-                background: url(../img/line.svg) 0 0 / contain no-repeat;
+                background: url(../img/icons/icon-line.png) 0 0 / contain
+                    no-repeat;
                 width: 38px;
                 height: 10px;
                 z-index: 9999;
@@ -80,5 +82,25 @@
 
     &__img {
         width: 100%;
+    }
+}
+
+@media (max-width: 1920px) {
+    .about {
+        &__block {
+            &:first-child {
+                &::after {
+                    right: -28px;
+                    width: 30px;
+                }
+            }
+
+            &_padding {
+                &::after {
+                    right: -28px;
+                    width: 30px;
+                }
+            }
+        }
     }
 }

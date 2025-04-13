@@ -7,8 +7,23 @@
         gap: 50px;
         background-color: var(--lightest);
         border-radius: 15px;
-        padding-top: 120px;
-        padding-bottom: 110px;
+        padding: 116px 55px;
+    }
+
+    &__title {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: 45px;
+            background-image: url(../img/icons/icon-callback.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 35px;
+            height: 25px;
+        }
     }
 
     &__block-left {
