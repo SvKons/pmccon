@@ -119,8 +119,8 @@
     }
 
     &__bottom-block {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         align-items: center;
         gap: 100px;
     }
@@ -242,6 +242,112 @@
 
         &__bottom-block {
             gap: 31px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .partner {
+        &::after {
+            right: -1260px;
+            width: 350%;
+        }
+
+        &__top-block {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__title {
+            padding: 0;
+        }
+
+        &__block-wrap {
+            &:first-child,
+            &:last-child {
+                padding: 0;
+            }
+        }
+
+        &__block-stats {
+            flex-direction: row;
+            max-width: 100%;
+            margin-bottom: 62px;
+        }
+
+        &__top-block {
+            &::after {
+                top: 240px;
+                right: 150px;
+            }
+        }
+
+        &__experience {
+            max-width: 284px;
+            justify-self: center;
+            margin: 0;
+        }
+
+        &__item,
+        &__block-title {
+            text-align: center;
+        }
+
+        &__bottom-block {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .partner {
+        &::after {
+            right: -1850px;
+            width: 500%;
+        }
+
+        &__block-stats {
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        &__block-title,
+        &__item {
+            text-align: left;
+        }
+
+        &__top-block {
+            &::after {
+                top: 390px;
+                right: 70px;
+            }
+        }
+
+        &__experience {
+            max-width: 100%;
+        }
+
+        &__text br {
+            display: none;
+        }
+
+        &__bottom-block {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .partner {
+        &::after {
+            right: -1390px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .partner {
+        &::after {
+            right: -1240px;
         }
     }
 }

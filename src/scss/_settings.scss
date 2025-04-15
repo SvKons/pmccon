@@ -49,6 +49,7 @@ a {
 
     &__section-bg {
         position: relative;
+        overflow: hidden;
         &::before {
             content: "";
             position: absolute;
@@ -111,6 +112,12 @@ a {
     }
 }
 
+@media (max-width: 680px) {
+    .title {
+        font-size: 1.125rem;
+    }
+}
+
 .text-decor {
     display: flex;
     gap: 10px;
@@ -162,6 +169,26 @@ a {
     .top-wrapper {
         &::after {
             right: -142px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .top-wrapper {
+        &::after {
+            right: 0;
+            width: 90%;
+            top: 238px;
+            height: 90%;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .top-wrapper {
+        &::after {
+            top: 88px;
+            height: 67%;
         }
     }
 }
@@ -220,6 +247,29 @@ a {
 @media (max-width: 1200px) {
     .button {
         padding: 6px 25px;
+    }
+}
+
+@media (max-width: 860px) {
+    .button {
+        padding: 16px 25px;
+    }
+}
+
+@media (max-width: 680px) {
+    .button {
+        padding: 8px 7px;
+
+        &_transparent {
+            padding: 21px 10px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .button {
+        width: 100%;
     }
 }
 

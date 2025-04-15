@@ -1,6 +1,6 @@
 .privacy-policy {
     &__wrapper {
-        padding: 26px 360px;
+        padding: 26px 70px;
     }
 
     &__button {
@@ -22,6 +22,21 @@
         font-size: 1.5rem;
         text-align: center;
         margin-bottom: 30px;
-        padding: 0 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .privacy-policy {
+        &__wrapper {
+            padding: 16px 20px;
+        }
+
+        &__title {
+            font-size: 1.25rem;
+        }
+
+        &__block {
+            padding: 23px;
+        }
     }
 }

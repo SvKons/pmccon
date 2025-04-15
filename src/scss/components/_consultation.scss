@@ -202,3 +202,79 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .consultation {
+        &__wrapper {
+            flex-wrap: wrap;
+            padding: 43px 43px 56px;
+        }
+
+        &__text {
+            max-width: 380px;
+        }
+
+        &__block-right-wrapper {
+            width: 100%;
+        }
+
+        &__block-left {
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                bottom: -12px;
+                right: -453px;
+                width: 270px;
+                height: 175px;
+            }
+        }
+
+        &__block-right-decor {
+            &::before {
+                top: 291px;
+                left: -45px;
+                width: 76px;
+                height: 53px;
+            }
+        }
+
+        &__bottom-block {
+            justify-content: unset;
+        }
+
+        &__privacy {
+            max-width: 396px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .consultation {
+        &__block-right {
+            gap: 45px;
+        }
+
+        &__bottom-block {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        &__button {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .consultation {
+        &__wrapper {
+            padding: 22px;
+        }
+
+        &__block-right {
+            padding: 23px 10px;
+        }
+    }
+}

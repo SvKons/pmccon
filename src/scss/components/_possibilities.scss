@@ -7,7 +7,8 @@
     }
 
     &__blocks {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 11px;
     }
 
@@ -38,6 +39,7 @@
 
     &__img {
         height: 100%;
+        width: 100%;
         justify-self: center;
     }
 }
@@ -92,6 +94,40 @@
 
         &__img-wrap {
             height: 143px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .possibilities {
+        margin-bottom: 60px;
+
+        &__blocks {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__title {
+            padding: 0 92px;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .possibilities {
+        &__title {
+            padding: 0;
+        }
+
+        &__blocks {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__block-title {
+            font-size: 1.125rem;
+        }
+
+        &__text-wrap {
+            padding: 20px 23px 20px;
         }
     }
 }

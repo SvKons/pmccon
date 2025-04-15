@@ -177,6 +177,10 @@
             &_size {
                 max-width: 100%;
             }
+            &_padding {
+                order: 0;
+                min-width: auto;
+            }
         }
     }
 }

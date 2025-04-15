@@ -80,3 +80,50 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .work {
+        &__title {
+            padding-right: 608px;
+            margin-bottom: 25px;
+        }
+
+        &__blocks {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__title-block br {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .work {
+        &__title {
+            padding-right: 418px;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .work {
+        margin-bottom: 60px;
+
+        &__title {
+            padding-right: 368px;
+        }
+
+        &__blocks {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .work {
+        &__title {
+            padding: 0;
+        }
+    }
+}

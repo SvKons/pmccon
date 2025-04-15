@@ -25,11 +25,11 @@
         position: relative;
         z-index: 20;
         background: #fff;
-        padding: 53px 62px;
         max-width: 800px;
-        margin: 100px auto;
         border-radius: 10px;
         text-align: center;
+        padding: 53px 62px;
+        margin: 100px auto;
 
         &_width {
             max-width: 1240px;
@@ -60,8 +60,8 @@
 
     &__close {
         position: absolute;
-        top: 62px;
-        right: calc(50% - 398px - 40px);
+        top: -38px;
+        right: -40px;
         width: 40px;
         height: 40px;
         color: var(--orange);
@@ -78,7 +78,7 @@
         padding: 0;
 
         &_position {
-            right: calc(50% - 618px - 40px);
+            right: -40px;
         }
     }
 
@@ -111,8 +111,8 @@
     }
 
     &__bottom-block {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
 
@@ -174,16 +174,73 @@
         overflow: hidden;
         height: 100%;
     }
+}
 
-    @media (max-width: 540px) {
-        &__close {
-            top: 40px;
-            right: 20px;
-            transform: none;
+@media (max-width: 1200px) {
+    .popup {
+        &__content {
+            &_width {
+                max-width: 900px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .popup {
+        &__content {
+            max-width: 500px;
+            padding: 20px;
+
+            &_width {
+                flex-direction: column;
+                gap: 20px;
+                margin-top: 50px;
+            }
         }
 
+        &__title {
+            font-size: 1.75rem;
+
+            &_font {
+                font-size: 1.25rem;
+            }
+        }
+
+        &__inputs,
+        &__bottom-block {
+            padding: 0;
+        }
+
+        &__bottom-block {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .popup {
         &__content {
-            margin: 80px 20px;
+            max-width: 300px;
+            padding: 10px;
+        }
+
+        &__title {
+            font-size: 1.25rem;
+        }
+
+        &__text {
+            font-size: 0.875rem;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .popup {
+        &_content {
+            max-width: 280px;
         }
     }
 }
