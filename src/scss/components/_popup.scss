@@ -21,10 +21,19 @@
         z-index: 1;
     }
 
+    &__inner {
+        position: relative;
+        max-width: 1240px;
+        margin: 0 auto;
+
+        &_width {
+            max-width: 800px;
+        }
+    }
+
     &__content {
         max-height: 90vh;
         overflow-y: auto;
-        overflow-x: hidden;
         position: relative;
         z-index: 20;
         background: #fff;
@@ -79,10 +88,6 @@
         justify-content: center;
         line-height: 1;
         padding: 0;
-
-        &_position {
-            right: -40px;
-        }
     }
 
     &__inputs {
@@ -180,6 +185,10 @@
 
 @media (max-width: 1200px) {
     .popup {
+        &__inner {
+            max-width: 900px;
+        }
+
         &__content {
             &_width {
                 max-width: 900px;
@@ -190,6 +199,13 @@
 
 @media (max-width: 1024px) {
     .popup {
+        &__inner {
+            max-width: 500px;
+            &_width {
+                max-width: 500px;
+            }
+        }
+
         &__content {
             max-width: 500px;
             padding: 20px;
@@ -223,6 +239,10 @@
 
 @media (max-width: 680px) {
     .popup {
+        &__inner {
+            max-width: 300px;
+        }
+
         &__content {
             max-width: 300px;
             padding: 10px;
