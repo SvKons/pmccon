@@ -303,7 +303,15 @@
         }
 
         &__info-block {
-            min-height: 557px;
+            min-height: 615px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .projects {
+        &__pagination-block {
+            flex-direction: column;
         }
     }
 }
