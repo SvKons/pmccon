@@ -22,6 +22,9 @@
     }
 
     &__content {
+        max-height: 90vh;
+        overflow-y: auto;
+        overflow-x: hidden;
         position: relative;
         z-index: 20;
         background: #fff;
@@ -172,7 +175,6 @@
 
     &__no-scroll {
         overflow: hidden;
-        height: 100%;
     }
 }
 
@@ -224,6 +226,7 @@
         &__content {
             max-width: 300px;
             padding: 10px;
+            margin: 50px auto;
         }
 
         &__title {

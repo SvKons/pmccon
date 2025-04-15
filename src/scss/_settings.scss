@@ -193,6 +193,14 @@ a {
     }
 }
 
+@media (max-width: 425px) {
+    .top-wrapper {
+        &::after {
+            top: 140px;
+        }
+    }
+}
+
 .button {
     font-family: var(--font-family);
     font-weight: 600;
