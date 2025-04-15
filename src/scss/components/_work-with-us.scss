@@ -1,10 +1,6 @@
 .work {
     margin-bottom: 140px;
 
-    &__text-decor {
-        margin-bottom: 40px;
-    }
-
     &__title {
         padding-right: 1220px;
         margin-bottom: 53px;
@@ -40,5 +36,47 @@
         font-weight: 500;
         font-size: 1.125rem;
         color: var(--grey-4);
+    }
+}
+
+@media (max-width: 1440px) {
+    .work {
+        margin-bottom: 120px;
+
+        &__title {
+            padding-right: 910px;
+            margin-bottom: 30px;
+        }
+
+        &__blocks {
+            gap: 10px;
+        }
+
+        &__block {
+            gap: 60px;
+            padding: 24px 22px 26px;
+        }
+
+        &__title-block {
+            font-size: 1.25rem;
+        }
+
+        &__description {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .work {
+        margin-bottom: 80px;
+
+        &__title {
+            padding-right: 778px;
+        }
+
+        &__block {
+            gap: 30px;
+        }
     }
 }

@@ -124,3 +124,40 @@
         max-width: 216px;
     }
 }
+
+@media (max-width: 1440px) {
+    .callback {
+        margin-bottom: 48px;
+
+        &__wrapper {
+            gap: 5px;
+            padding: 63px 35px;
+        }
+
+        &__block-left {
+            padding-right: 142px;
+        }
+
+        &__inputs-blocks {
+            padding: 24px 18px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .callback {
+        &__title {
+            &::after {
+                display: none;
+            }
+        }
+
+        &__block-left {
+            padding-right: 166px;
+        }
+
+        &__form-text {
+            font-size: 1rem;
+        }
+    }
+}

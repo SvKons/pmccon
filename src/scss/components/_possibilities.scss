@@ -22,7 +22,7 @@
 
     &__block-title {
         font-weight: 600;
-        font-size: 1.563rem;
+        font-size: 1.625rem;
         color: var(--orange);
         margin-bottom: 18px;
     }
@@ -39,5 +39,59 @@
     &__img {
         height: 100%;
         justify-self: center;
+    }
+}
+
+@media (max-width: 1440px) {
+    .possibilities {
+        margin-bottom: 120px;
+
+        &__title {
+            margin-bottom: 35px;
+        }
+
+        &__img-wrap {
+            height: 193px;
+        }
+
+        &__text-wrap {
+            padding: 50px 63px 42px;
+        }
+
+        &__text {
+            padding: 0;
+        }
+
+        &__block-title {
+            font-size: 1.375rem;
+            margin-bottom: 14px;
+        }
+
+        &__text {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .possibilities {
+        margin-bottom: 80px;
+
+        &__title {
+            padding: 0 122px;
+            margin-bottom: 25px;
+        }
+
+        &__text-wrap {
+            padding: 20px 33px 30px;
+        }
+
+        &__block-title {
+            margin-bottom: 8px;
+        }
+
+        &__img-wrap {
+            height: 143px;
+        }
     }
 }

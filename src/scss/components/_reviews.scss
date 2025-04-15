@@ -18,3 +18,28 @@
         background: var(--grey-3);
     }
 }
+
+@media (max-width: 1440px) {
+    .reviews {
+        margin-bottom: 120px;
+
+        &__title {
+            padding-right: 760px;
+            margin-bottom: 24px;
+        }
+
+        &__blocks {
+            gap: 18px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .reviews {
+        margin-bottom: 80px;
+
+        &__title {
+            padding-right: 652px;
+        }
+    }
+}

@@ -119,7 +119,6 @@ const styles = () => {
 };
 
 // fonts
-
 const fonts = async () => {
     const ttf2woff2Plugin = (await import("gulp-ttf2woff2")).default;
 
@@ -299,6 +298,7 @@ const htmlInclude = () => {
         .pipe(
             typograf({
                 locale: ["ru", "en-US"],
+                disableRule: ["common/nbsp/*"],
             })
         )
         .pipe(dest(buildFolder))

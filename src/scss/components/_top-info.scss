@@ -9,8 +9,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 50px;
-        z-index: 999;
+        gap: 210px;
+        z-index: 3;
     }
 
     &__title-wrap {
@@ -49,6 +49,40 @@
     }
 
     &__bottom-text {
+        font-size: 1.125rem;
         max-width: 375px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .top-info {
+        &__wrapper {
+            gap: 188px;
+        }
+
+        &__title {
+            font-size: 3.125rem;
+        }
+
+        &__bottom-text {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .top-info {
+        &__wrapper {
+            gap: 100px;
+        }
+
+        &__title-wrap {
+            gap: 30px;
+        }
+
+        &__title {
+            font-size: 2.25rem;
+            max-width: 680px;
+        }
     }
 }

@@ -9,7 +9,7 @@
     cursor: pointer;
     padding: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -33,7 +33,7 @@
 
         &.open {
             span:nth-child(1) {
-                transform: translateY(10px) rotate(45deg);
+                transform: translateY(6px) rotate(45deg);
             }
             span:nth-child(2) {
                 opacity: 0;

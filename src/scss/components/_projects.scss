@@ -1,11 +1,6 @@
 .projects {
     margin-bottom: 140px;
 
-    &__wrapper {
-        display: flex;
-        gap: 58px;
-    }
-
     &__title {
         padding-right: 900px;
         margin-bottom: 77px;
@@ -64,6 +59,7 @@
         font-weight: 600;
         font-size: 1.5rem;
         color: rgba(0, 0, 0, 0.8);
+        padding-right: 180px;
     }
 
     &__description {
@@ -183,6 +179,51 @@
 
         &:first-child {
             display: block;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .projects {
+        margin-bottom: 120px;
+
+        &__title {
+            padding-right: 650px;
+        }
+
+        &__block-title:last-child br {
+            display: none;
+        }
+
+        &__block-title {
+            font-size: 1.375rem;
+            padding-right: 100px;
+        }
+
+        &__content {
+            gap: 28px;
+            padding-bottom: 30px;
+            margin-bottom: 20px;
+        }
+
+        &__description {
+            gap: 44px;
+            margin-right: 0;
+        }
+
+        &__img-wrap {
+            max-width: 367px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .projects {
+        margin-bottom: 80px;
+
+        &__title {
+            padding-right: 448px;
+            margin-bottom: 35px;
         }
     }
 }

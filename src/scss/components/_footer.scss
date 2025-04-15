@@ -80,3 +80,19 @@
         padding-top: 68px;
     }
 }
+
+@media (max-width: 1440px) {
+    .footer {
+        &__link {
+            font-size: 1.125rem;
+        }
+
+        &__block-top {
+            margin-bottom: 62px;
+        }
+
+        &__block-bottom {
+            padding-top: 40px;
+        }
+    }
+}
