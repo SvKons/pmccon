@@ -308,6 +308,14 @@
     }
 }
 
+@media (max-width: 400px) {
+    .projects {
+        &__block-title {
+            padding: 0;
+        }
+    }
+}
+
 @media (max-width: 375px) {
     .projects {
         &__pagination-block {
